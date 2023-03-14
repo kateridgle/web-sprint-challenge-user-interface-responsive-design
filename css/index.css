@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
+
 body {
 	line-height: 1;
 }
@@ -65,6 +68,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: white;
 }
 
 h1 {
@@ -87,31 +91,51 @@ p, a {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/home-header.jpg');
+    background-image:linear-gradient(0deg, rgba(0, 4, 17, .8), rgba(0, 4, 17, .8)) url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    background-color: rgb(0, 4, 17, .8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+i {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
 }
 
 /* spacers */
 .spacer {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     background-color: rgb(0, 4, 17);
+    color: white;
 }
 .spacer-sm {
     width: 100%;
     height: 10vh;
-    background-color: rgb(0, 4, 17);
+    background-color: #205a97;
+    color: white;
 }
 
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 /* about us section */
 .about {
@@ -122,6 +146,7 @@ header {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    color: white;
 }
 
 .about-container {
@@ -191,19 +216,42 @@ header {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+}
+footer nav{
+    display: flex;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   } 
+   nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   i {
+    display: flex;
+   }
 
     /* gallery section */
     .gallery {
         height: auto;
+    }
+    .image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     /* about us section */
@@ -249,5 +297,8 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
