@@ -95,18 +95,30 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+.overlay {
+    width: 100%;
+    background-color:  rgba(0, 4, 17, .8);
 }
 
 div.nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 4, 17, .8);
 }
+
+a{
+    padding: 2% 2%;
+}
+
+
+
 i {
     display: flex;
     align-items: center;
+    padding: 2% 2%;
 }
 
 /* spacer */
@@ -132,11 +144,32 @@ i {
     background-position: center;
     background-repeat: no-repeat;
 }
-.menu-item {
-    display: flex;
-    flex-wrap: wrap;
-}
 
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.menu-section {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.image {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/staff-bartender.jpg');
+    background-color: rgb(0, 4, 17, .8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.menu-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 4, 17, .8);
+}
 
 /* footer section */
 footer {
